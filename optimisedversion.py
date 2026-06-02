@@ -1,4 +1,4 @@
-# improved cde using numpy vectorisation
+# improved code using numpy vectorisation
 
 import numpy as np
 import time
@@ -22,9 +22,10 @@ def estimate_pi_vectorized(num_points, seed=42):
 
     return pi_estimate, runtime
 
-num_points = 10_000_000
-
-estimate, runtime = estimate_pi_vectorized(num_points)
-
-print(f"Estimated pi: {estimate}")
-print(f"Runtime: {runtime:.4f} seconds")
+if __name__ == '__main__':
+    num_points = 10_000_000
+    
+    estimate, runtime = estimate_pi_vectorized(num_points)
+    
+    print(f"Estimated pi: {estimate}")
+    print(f"Runtime: {runtime:.4f} seconds")
